@@ -1,0 +1,13 @@
+{
+	"manifest_version": 2,
+
+	"name": "BitCups",
+	"description": "replaces BitCoins with the future of e-commerce - CoffeeCups",
+	"version": "1.0",
+    "content_scripts": [
+    {
+	  "run_at":"document_idle",
+      "matches": ["*://*/*"],
+      "js": ["bitcups.js"]
+    }]
+}
